@@ -81,6 +81,7 @@ class Book extends Component {
   }
 
   handleDynamicAdd(option) {
+    //BUG: the text field isn't being updated? it's null on the backend, but not updating
     var context = this;
 
     if (option === 'ingredients') {
@@ -91,7 +92,9 @@ class Book extends Component {
         ingredientArr: updateIng,
         ingredients: null
       });
-    } else if (option === 'instructions') {
+    }
+
+    if (option === 'instructions') {
       var updateInst = context.state.instructionArr.slice();
       updateInst.push(context.state.instructions);
 
