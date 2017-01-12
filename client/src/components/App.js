@@ -29,6 +29,7 @@ class App extends Component {
             <Route path="/calendar" component={Calendar} />
             <Route path="/schedule" component={Schedule} />
             <Route path="/recipe" component={Book} />
+            <Route path="/new-recipe" component={NewRecipe} />
             <Route path="/recipeSearch" component={RecipeSearch} />
             <Route path="/recipeSearchResult" component={RecipeSearchResult} />
             <Route path="/meals" component={MealPlanner} />
